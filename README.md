@@ -5,4 +5,6 @@ Deep learning algorithm are known to be computationally expensive and can take s
 
 - Mrjob is used as a MapReduce abstraction to implement a two layer neural network. 
 - Each mapper or individual machine is equipped with a GPU and uses Theano/Tensorflow for GPU multi-threading. 
-- Further, the reducer use genetic algorithms to speed up the convergence rate with the help of 2 roulette selection. 
+- Gradients are computed in the mapper throught backpropagation.
+- The reducer performs the updation of weights.
+- The number of epochs is the number of time the `step` function is called.
