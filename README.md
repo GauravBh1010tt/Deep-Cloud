@@ -3,6 +3,6 @@ Deep learning algorithm are known to be computationally expensive and can take s
 
 ### Features of the project:
 
-- Mrjob is used as a MapReduce abstraction to implement a neural network. 
+- Mrjob is used as a MapReduce abstraction to implement a two layer neural network. 
 - Each mapper or individual machine is equipped with a GPU and uses Theano/Tensorflow for GPU multi-threading. 
 - Further, the reducer use genetic algorithms to speed up the convergence rate with the help of 2 roulette selection. 
